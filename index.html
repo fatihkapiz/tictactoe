@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <style>
+        body {
+            background-color: rgb(46,46,46);
+            font-family: monospace;
+        }
+
+        .grid {
+
+            display: grid;
+            grid-template-columns: repeat(3, 12vh);
+            grid-template-rows: 12vh 12vh 12vh;
+            justify-content: center;
+            width: 36vh;
+            font-size: 10vh;
+            grid-gap: 2px;
+        }
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1px;
+            background-color: rgb(36,36,36);
+            box-shadow: 1px 2px 2px 1px rgb(0 0 0 / 12%), 1px 2px 2px 1px rgb(0 0 0 / 24%);
+        }
+        .holder {
+            width: 36vh;
+            height: 36vh;
+            margin: auto auto;
+            margin-top: 20vh;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        button {
+            text-align: center;
+        }
+        
+    </style>
+
+    <body>
+        <div class="holder">
+            <h1>TIC TAC TOE</h2>
+            <div class="grid">
+                <div index="0" class="cell"></div>
+                <div index="1" class="cell"></div>
+                <div index="2" class="cell"></div>
+                <div index="3" class="cell"></div>
+                <div index="4" class="cell"></div>
+                <div index="5" class="cell"></div>
+                <div index="6" class="cell"></div>
+                <div index="7" class="cell"></div>
+                <div index="8" class="cell"></div>
+            </div>
+            <h1 class="gameover"></h1>
+            <button id="restart">
+                <h2>Play Again</h2>
+            </button>
+        </div>
+    </body>
+    <script src="tictactoe.js"></script>
+
+</HTML>
